@@ -1,0 +1,167 @@
+ <style>
+				 .txt-money-back{
+					 color: #1652f0;
+				 }
+
+				 .btn.btn-primary {
+						--tw-bg-opacity: 1;
+						background-color: rgba(239,93,172,var(--tw-bg-opacity));
+						--tw-text-opacity: 1;
+						color: rgba(255,255,255,var(--tw-text-opacity));
+				}
+
+				/* ïnk Button */
+				input#\# {
+						background-color: #f472b6;
+				}
+
+				/* Card Section */
+				.max-w-md{
+					max-width: 40rem;
+				}
+				.rounded-lg {
+						border-radius: 2.5rem;
+				}
+				.txt-title{
+					color: #1652f0;
+				}
+
+      </style>
+<!-- Cotizaciṕon Section -->
+<section class="pt-20 pb-48 border-2 bg-gray-100">
+	<h1 class="txt-title text-center text-5xl font-semibold">Tu cotización</h1>
+	<div class="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-20 justify-center text-center mx-auto">
+		<div class="flex justify-center md:justify-end -mt-16">
+			<img class="w-30 h-30 object-cover rounded-full border-2 border-pink-400" src="<%= Routes.static_path(@conn, "/images/you_can_trust_super_vignette.png") %>"/>
+		</div>
+		<div>
+			<h2 class="text-pink-400 text-5xl font-semibold">Seguro con devolución</h2>
+			<p class="mt-2 text-gray-600 text-4xl">Un seguro que te devuelve tu dinero despues de <strong class="txt-money-back">5 años</strong></p>
+			<p class="mt-2 text-gray-600">En caso de fallecer te pagamos</p>
+			<h2 class="txt-money-back text-5xl font-semibold">$500,000</h2>
+			<p class="mt-2 text-gray-600">O te devolvemos hasta <strong class="txt-money-back">$16,150.99</strong></p>
+		</div>
+	</div>
+</section>
+
+<!-- Tiempo de pago Section -->
+<section class="pt-20 pb-48 border-2">
+    <div class="mt-4">
+				<h2 class="text-4xl font-semibold justify-center text-center">Por caunto Tiempo quieres pagar?</h2>
+					<br>
+            <div class="flex flex-col items-stretch justify-center -mx-4 lg:flex-row">
+
+      <article class="flex flex-col items-center justify-center w-11/12 p-5 m-4 bg-gray-200 rounded-md lg:p-10">
+        <label class="inline-flex items-center">
+                <input type="radio" class="form-radio" name="accountType" value="personal">
+                <span class="ml-2">Mensual <strong class="text--price">$150 pesos</strong></span>
+                </label>
+      </article>
+
+      <article class="flex flex-col items-center justify-center w-11/12 p-5 m-4 bg-gray-200 rounded-md lg:p-10">
+        <label class="inline-flex items-center">
+                <input type="radio" class="form-radio" name="accountType" value="personal">
+                <span class="ml-2">Semestral <strong class="text--price">$900 pesos</strong></span>
+                </label>
+      </article>
+
+      <article class="flex flex-col items-center justify-center w-11/12 p-5 m-4 bg-gray-200 rounded-md lg:p-10">
+        <label class="inline-flex items-center">
+                <input type="radio" class="form-radio" name="accountType" value="personal">
+                <span class="ml-2">Anual <strong class="text--price">$1800</strong></span>
+                </label>
+      </article>
+
+    </div>
+						<div class="text-center mt-6">
+                <input type="submit" name="#" id="#" value="Contratar" class="btn-btn-primary rounded-lg outline-none text-white shadow justify-center">
+            </div> 
+    </div>
+</section>
+
+<section class="pt-20 pb-48 border-2 bg-gray-100">
+    <div class="container">
+        <div class="w-full md:w-3/5 mx-auto p-8">
+                    <img class="mx-auto" src="<%= Routes.static_path(@conn, "/images/check-icon.svg") %>"/>
+                
+                <h2 class="text-4xl font-semibold justify-center text-center">¿Qué cubre este seguro?</h2>
+								<br>
+                <div class="shadow-md">
+                    <div class="tab w-full overflow-hidden border-t">
+                    <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
+                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Muerte por enfermedad</label>
+                    <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-pink-400 leading-normal">
+                        <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden border-t">
+                    <input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
+                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">Muerte accidental</label>
+                    <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-pink-400 leading-normal">
+                        <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden border-t">
+                    <input class="absolute opacity-0" id="tab-multi-three" type="checkbox" name="tabs">
+                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">Enfermedad terminal</label>
+                    <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-pink-400 leading-normal">
+                        <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden border-t">
+                    <input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
+                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">Gastos funerarios</label>
+                    <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-pink-400 leading-normal">
+                        <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+   <div class="w-full md:w-3/5 mx-auto p-8">
+              <img class="mx-auto" src="<%= Routes.static_path(@conn, "/images/times-icon.svg") %>"/>
+                
+                <h2 class="text-4xl font-semibold justify-center text-center">¿Qué no cubre este seguro?</h2>
+								<br>
+         <div class="shadow-md">
+            <div class="tab w-full overflow-hidden border-t">
+               <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
+               <label class="block p-5 leading-normal cursor-pointer" for="tab-single-one">Enfermedades no declaradas</label>
+               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-pink-400 leading-normal">
+                  <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+               </div>
+            </div>
+            <div class="tab w-full overflow-hidden border-t">
+               <input class="absolute opacity-0" id="tab-single-two" type="radio" name="tabs2">
+               <label class="block p-5 leading-normal cursor-pointer" for="tab-single-two">Suicidio por 2 años</label>
+               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-pink-400 leading-normal">
+                  <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+               </div>
+            </div>
+            <div class="tab w-full overflow-hidden border-t">
+               <input class="absolute opacity-0" id="tab-single-three" type="radio" name="tabs2">
+               <label class="block p-5 leading-normal cursor-pointer" for="tab-single-three">Falsedades en la aplicación</label>
+               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-pink-400 leading-normal">
+                  <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+</section>
+
+<script>
+      /* Optional Javascript to close the radio button version by clicking it again */
+      var myRadios = document.getElementsByName('tabs2');
+      var setCheck;
+      var x = 0;
+      for(x = 0; x < myRadios.length; x++){
+          myRadios[x].onclick = function(){
+              if(setCheck != this){
+                   setCheck = this;
+              }else{
+                  this.checked = false;
+                  setCheck = null;
+          }
+          };
+      }
+   </script>
